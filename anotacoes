@@ -1,0 +1,64 @@
+crtl shift o - importa automaticamente
+crtl / - comenta tudo
+vendo modelo MVC (model view controller)
+
+modelo + servlet+ JSP
+
+Java reflection para criar classes sem precisar ficar declarando
+
+httpsession -> lugar onde usuario guarda informacoes dele
+
+timeout da sessao: 
+
+Talvez você ache os 30 minutos pouco ou muito tempo, mas saiba que isso é configurável através do nosso web.xml, basta colocar o seguinte trecho:
+
+<session-config>
+    <!-- 10 min -->
+    <session-timeout>10</session-timeout>
+</session-config> 
+
+Só reforçando: é um timeout de desuso. No caso acima, o Tomcat só removerá a sessão se o usuário não ficar ativo por 10 minutos.
+
+implementacao de um filtro
+
+se nao chamar chain.dofilter ele fica parado, nao da continuidade
+
+a autenticacao é feita atraves do filtro.
+
+a ordem dos filtros podem ser definidas no web.xml
+
+o controlador filter nao chama o chain.dofilter pois ele é o ultimo filtro para execeutar nossas acoes.
+
+filtro x interpectador -> filtro é antes do controlador, o interceptador é depois. interpectador é especifico de framework como Spring
+
+JDBC puro de banco de dados. ou lib que geram banco
+
+JSP - libs com o JQUERY para fazer ajax, spring
+
+spring simplifica acoes
+
+filtros
+
+formatos JSON/XML - se preocupa em apresentar os dados como por exemplo celulares
+
+lib java http client
+
+servidores
+
+tomcat e jetty -> servlet container ou servlet engine
+
+wildfly(red hat), weblogic(oracle), websphere(ibm) -> application server
+
+rodar nossa aplicacao no jetty:
+1. exportar o arquivo.war
+2. jogar na pasta webapps dentro do jetty
+3. rodar comando dentro da pasta do jetty -> java -jar start.jar
+
+as interfaces e quem implementa é o tomcat ou jetty. especificacoes servlet.
+
+API - application program interface
+
+
+
+
+
